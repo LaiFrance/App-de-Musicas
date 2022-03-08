@@ -1,8 +1,18 @@
 import React from 'react';
+import './index.css';
+import { BrowserRouter } from 'react-router-dom';
+import Home from './pages/Home/Home';
 
 class App extends React.Component {
   render() {
-    return (<p>TrybeTunes</p>);
+    return (
+      <div>
+        <BrowserRouter>
+          <Home />
+
+        </BrowserRouter>
+      </div>
+    );
   }
 }
 
