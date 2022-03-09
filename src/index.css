@@ -1,11 +1,84 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+margin:0;
+padding: 0;
+
 }
+
+.titulo{
+  margin-left:50px;
+  margin-bottom: 70px;
+}
+
+body {
+  background: transparent url("https://w0.peakpx.com/wallpaper/222/649/HD-wallpaper-anime-given-mafuyu-sato-ritsuka-uenoyama.jpg") no-repeat scroll 0px 50px;
+  background-position: 99% -15%;
+}
+
+
+input{
+  align-items: center;
+  margin-top: 20px;
+  width: 300px;
+  height: 30px;
+  background-color: #f2f1f5;
+}
+
+.login-page{
+width: 500px;
+height:400px;
+-webkit-box-shadow: 5px 10px 5px 0px rgba(171,171,171,0.62); 
+box-shadow: 5px 10px 5px 0px rgba(171,171,171,0.62);
+background-color: #f5f3fa;
+position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  justify-content: center;  
+  border-radius:50px;
+}
+
+.textButton{
+position: absolute;
+top: 50%;
+left: 62%;
+margin-right: -50%;
+transform: translate(-50%, -50%)
+
+}
+
+button {
+  background: #8cd1c8;
+  background-image: -webkit-linear-gradient(top, #8cd1c8, #2980b9);
+  background-image: -moz-linear-gradient(top, #8cd1c8, #2980b9);
+  background-image: -ms-linear-gradient(top, #8cd1c8, #2980b9);
+  background-image: -o-linear-gradient(top, #8cd1c8, #2980b9);
+  background-image: linear-gradient(to bottom, #8cd1c8, #2980b9);
+  -webkit-border-radius: 12;
+  -moz-border-radius: 12;
+  border-radius: 12px;
+  text-shadow: 1px 1px 2px #0f030f;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 40px 9px 40px;
+  text-decoration: none;
+ width: 310px;
+ margin-top: 50px;
+
+}
+
+button:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -13,7 +86,23 @@ code {
 }
 
 .loading {
-  align-items: center;
-  display: flex;
-  justify-content: center;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid blue;
+  border-right: 16px solid green;
+  border-bottom: 16px solid red;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
