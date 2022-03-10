@@ -1,14 +1,29 @@
-/*  import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import React, { Component } from 'react';
 import { getUser } from '../../services/userAPI';
 import Carregando from '../Carregando';
 
-export default class Header extends Component {
+class Header extends Component {
+  constructor() {
+    super();
+    this.state = {
+      nameUsuario: '',
+    };
+  }
+
+  async componentDidMount() {
+    const { name } = await getUser();
+    this.setState({ nameUsuario: name });
+  }
+
   render() {
+    const { state } = this;
     return (
       <header data-testid="header-component">
-        <p>Header</p>
+        {state.nameUsuario
+          ? <h1 className="user" data-testid="header-user-name">{ state.nameUsuario }</h1>
+          : <Carregando />}
       </header>
     );
   }
-}  */
+}
+export default Header;
