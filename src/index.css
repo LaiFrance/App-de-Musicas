@@ -11,24 +11,26 @@ padding: 0;
 .user{
 margin-top: 5px;
 margin-right: 5px;
-padding: 10px;
+padding: 6px;
 text-align:right;
 background:#0b8d8d;
-width: 190px;
-border: 2px outset #e0e9e9;
-border-radius: 40px 34px 40px 40px;
-font-size: 17px;
+width: 290px;
+border: 5px outset #e0e9e9;
+font-size: 27px;
 right:0;
+margin-top: 0;
 position:absolute;
 }
 
 body {
   background: transparent url("https://w0.peakpx.com/wallpaper/222/649/HD-wallpaper-anime-given-mafuyu-sato-ritsuka-uenoyama.jpg") no-repeat scroll 0px 50px;
-  background-position: 99% -45%;
+ 
+  background: linear-gradient(to bottom, rgb(3, 71, 73) 0%, rgb(37, 248, 231) 35%, rgb(45,167,197) 100%);
+  background-repeat: repeat-x;
 }
 
 header{
-background: linear-gradient(to bottom, rgb(32, 239, 246) 0%, rgb(37, 248, 231) 35%, rgb(45,167,197) 100%);
+background: linear-gradient(to bottom, rgb(3, 71, 73) 0%, rgb(37, 248, 231) 35%, rgb(45,167,197) 100%);
 height: 60PX;
 color: #f2f1f5;
 }
@@ -37,9 +39,12 @@ color: #f2f1f5;
 input{
   align-items: center;
   margin-top: 20px;
-  width: 300px;
-  height: 30px;
+  width: 800px;
+  height: 60px;
   background-color: #f2f1f5;
+  margin-left: 250px;
+  border-radius: 10px;
+  
 }
 
 .login-page{
@@ -68,23 +73,18 @@ transform: translate(-50%, -50%)
 }
 
 button {
-  background: #8cd1c8;
-  background-image: -webkit-linear-gradient(top, #8cd1c8, #2980b9);
-  background-image: -moz-linear-gradient(top, #8cd1c8, #2980b9);
-  background-image: -ms-linear-gradient(top, #8cd1c8, #2980b9);
-  background-image: -o-linear-gradient(top, #8cd1c8, #2980b9);
-  background-image: linear-gradient(to bottom, #8cd1c8, #2980b9);
-  -webkit-border-radius: 12;
-  -moz-border-radius: 12;
-  border-radius: 12px;
+  background: #131414;
   text-shadow: 1px 1px 2px #0f030f;
   font-family: Arial;
   color: #ffffff;
   font-size: 20px;
   padding: 10px 40px 9px 40px;
+  margin:20px;
   text-decoration: none;
- width: 310px;
- margin-top: 50px;
+ width: 200px;
+ height: 55px;
+ border-radius: 10px;
+ margin-top: 55px;
 
 }
 
@@ -127,12 +127,12 @@ code {
 }
 
 .links, a {
-font-family: Georgia, serif;
+background-color: #0c0909;
 padding: 10px;
 font-size: 29px;
 letter-spacing: 2.6px;
 word-spacing: 2.4px;
-color: #0c0909;
+color: #ffffff;
 font-weight: 700;
 text-align: center;
 margin-right: 300px;
@@ -140,3 +140,30 @@ padding: 5px;
 }
 
 ul li { margin:0; padding:0 0 0 8px; float:left;}
+
+.artista-album{
+  min-height: 410px;
+  display: flexbox;
+  border: 2px solid black;
+  text-align: center;
+  box-shadow: 0 10px 8px 0 rgba(0,0,0,0.2);
+  width:410px;
+  margin: 30px;
+  padding: 5px;
+}
+
+.product-list:hover{
+  background-color:rgb(156, 156, 231);
+  }
+
+img {
+  width: 300px;
+  padding: 10px;
+ border-radius: 2px solid black;
+}
+
+p{
+  font-size: 30px;
+  margin-top: 50px;
+  text-align: center;
+}
