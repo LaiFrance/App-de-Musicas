@@ -48,12 +48,14 @@ class Login extends React.Component {
                 <>
                   <h1 className="titulo">GIVEN TUNES</h1>
                   <input
+                    className="input-login"
                     placeholder="Nome"
                     data-testid="login-name-input"
                     type="text"
                     onChange={ this.validarButton }
                   />
                   <button
+                    className="btn-login"
                     disabled={ state.isButtonDisabled }
                     type="submit"
                     data-testid="login-submit-button"

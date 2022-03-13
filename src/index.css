@@ -4,8 +4,13 @@ padding: 0;
 
 }
 
+.btn-login{
+  width: 450px;
+  margin-right: 130px;
+}
+
 .titulo{
-  margin-left:50px;
+  margin-right:100px;
   margin-bottom: 70px;
 }
 .user{
@@ -42,10 +47,14 @@ input{
   width: 800px;
   height: 60px;
   background-color: #f2f1f5;
-  margin-left: 250px;
+  margin-right: 100px;
   border-radius: 10px;
-  
 }
+
+.input-login{
+  width: 450px;
+}
+
 
 .login-page{
 width: 500px;
@@ -147,7 +156,7 @@ ul li { margin:0; padding:0 0 0 8px; float:left;}
   border: 2px solid black;
   text-align: center;
   box-shadow: 0 10px 8px 0 rgba(0,0,0,0.2);
-  width:210px;
+  width:310px;
   margin: 30px;
   padding: 5px;
 }
