@@ -56,6 +56,7 @@ class Search extends React.Component {
             : (
               <>
                 <input
+                  className="input-seach"
                   type="text"
                   placeholder="Digite aqui o Nome do Artista"
                   name="inputbar"
@@ -86,7 +87,7 @@ class Search extends React.Component {
              </p>
            )}
           { arrey.map(({ collectionId, collectionName, artworkUrl100, artistName }) => (
-            <div key={ collectionId }>
+            <div className="container" key={ collectionId }>
               <Link
                 to={ `/album/${collectionId}` }
                 data-testid={ `link-to-album-${collectionId}` }

@@ -40,13 +40,12 @@ class Login extends React.Component {
     const { state } = this;
     return (
       <p className="imagem">
-        <div> login page </div>
         <div className="login-page">
           <div className="textButton" data-testid="page-login">
             {state.carregar ? <Carregando />
               : (
                 <>
-                  <h1 className="titulo">GIVEN TUNES</h1>
+                  <h1 className="titulo">ANIME TUNES</h1>
                   <input
                     className="input-login"
                     placeholder="Nome"

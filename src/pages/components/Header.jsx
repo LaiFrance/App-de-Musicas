@@ -8,13 +8,12 @@ class Header extends Component {
     super();
     this.state = {
       nameUsuario: '',
-      // carregando: false,
     };
   }
 
   async componentDidMount() {
     const { name } = await getUser();
-    this.setState({ nameUsuario: name /* carregando: false  */ });
+    this.setState({ nameUsuario: name });
   }
 
   render() {
@@ -25,9 +24,17 @@ class Header extends Component {
           ? <h1 className="user" data-testid="header-user-name">{ state.nameUsuario }</h1>
           : <Carregando />}
         <nav className="links">
-          <Link to="/search" data-testid="link-to-search">Search</Link>
-          <Link to="/favorites" data-testid="link-to-favorites">Favorites</Link>
-          <Link to="/profile" data-testid="link-to-profile">Profile</Link>
+          <ul>
+            <li>
+              <Link to="/search" data-testid="link-to-search">Pesquisar</Link>
+            </li>
+            <li>
+              <Link to="/favorites" data-testid="link-to-favorites">Favorites</Link>
+            </li>
+            <li>
+              <Link to="/profile" data-testid="link-to-profile">Profile</Link>
+            </li>
+          </ul>
         </nav>
       </header>
     );

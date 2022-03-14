@@ -1,6 +1,6 @@
 *{
-margin:0;
-padding: 0;
+margin:2px;
+padding: 0px;
 
 }
 
@@ -8,6 +8,7 @@ padding: 0;
   width: 450px;
   margin-right: 130px;
 }
+
 
 .titulo{
   margin-right:100px;
@@ -45,10 +46,9 @@ input{
   align-items: center;
   margin-top: 20px;
   width: 800px;
-  height: 60px;
+  height: 50px;
   background-color: #f2f1f5;
-  margin-right: 100px;
-  border-radius: 10px;
+  padding: 10px;
 }
 
 .input-login{
@@ -57,8 +57,9 @@ input{
 
 
 .login-page{
-width: 500px;
-height:400px;
+zoom: 80%;
+width: 600px;
+height:500px;
 -webkit-box-shadow: 5px 10px 5px 0px rgba(171,171,171,0.62); 
 box-shadow: 5px 10px 5px 0px rgba(171,171,171,0.62);
 background-color: #f5f3fa;
@@ -87,12 +88,9 @@ button {
   font-family: Arial;
   color: #ffffff;
   font-size: 20px;
-  padding: 10px 40px 9px 40px;
-  margin:20px;
   text-decoration: none;
  width: 200px;
- height: 55px;
- border-radius: 10px;
+ height: 50px;
  margin-top: 55px;
 
 }
@@ -113,14 +111,28 @@ code {
     monospace;
 }
 
+.list{
+  text-align: center;
+}
+
+main{
+  text-align: center;
+  display: block;
+}
+
 .loading {
+  position: absolute;
+  top: 50%;
+  height: 100px;
+  margin-top: 180px; 
+  margin-left: 650px;
   border: 16px solid #f3f3f3;
   border-radius: 50%;
   border-top: 16px solid rgb(25, 25, 31);
   border-right: 16px solid rgb(31, 150, 124);
   border-bottom: 16px solid rgb(17, 74, 180);
-  width: 120px;
-  height: 120px;
+  width: 50px;
+  height: 50px;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
@@ -135,20 +147,7 @@ code {
   100% { transform: rotate(360deg); }
 }
 
-.links, a {
-background-color: #0c0909;
-padding: 10px;
-font-size: 29px;
-letter-spacing: 2.6px;
-word-spacing: 2.4px;
-color: #ffffff;
-font-weight: 700;
-text-align: center;
-margin-right: 300px;
-padding: 5px; 
-}
 
-ul li { margin:0; padding:0 0 0 8px; float:left;}
 
 .artista-album{
   min-height: 210px;
@@ -159,11 +158,41 @@ ul li { margin:0; padding:0 0 0 8px; float:left;}
   width:310px;
   margin: 30px;
   padding: 5px;
+  flex-direction: column;
+align-items: center;
+
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 
-.product-list:hover{
-  background-color:rgb(156, 156, 231);
-  }
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(62, 48, 184);
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
 
 img {
   width: 300px;
