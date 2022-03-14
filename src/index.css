@@ -1,207 +1,207 @@
 *{
-margin:2px;
-padding: 0px;
-
-}
-
-.btn-login{
-  width: 450px;
-  margin-right: 130px;
-}
-
-
-.titulo{
-  margin-right:100px;
-  margin-bottom: 70px;
-}
-.user{
-margin-top: 5px;
-margin-right: 5px;
-padding: 6px;
-text-align:right;
-background:#0b8d8d;
-width: 290px;
-border: 5px outset #e0e9e9;
-font-size: 27px;
-right:0;
-margin-top: 0;
-position:absolute;
-}
-
-body {
-  background: transparent url("https://w0.peakpx.com/wallpaper/222/649/HD-wallpaper-anime-given-mafuyu-sato-ritsuka-uenoyama.jpg") no-repeat scroll 0px 50px;
- 
+  margin:2px;
+  padding: 0px;
+  
+  }
+  
+  .btn-login{
+    width: 450px;
+    margin-right: 130px;
+  }
+  
+  
+  .titulo{
+    margin-right:100px;
+    margin-bottom: 70px;
+  }
+  .user{
+  margin-top: 5px;
+  margin-right: 5px;
+  padding: 6px;
+  text-align:right;
+  background:#0b8d8d;
+  width: 290px;
+  border: 5px outset #e0e9e9;
+  font-size: 27px;
+  right:0;
+  margin-top: 0;
+  position:absolute;
+  }
+  
+  body {
+    background: transparent url("https://w0.peakpx.com/wallpaper/222/649/HD-wallpaper-anime-given-mafuyu-sato-ritsuka-uenoyama.jpg") no-repeat scroll 0px 50px;
+   
+    background: linear-gradient(to bottom, rgb(3, 71, 73) 0%, rgb(37, 248, 231) 35%, rgb(45,167,197) 100%);
+    background-repeat: repeat-x;
+  }
+  
+  header{
   background: linear-gradient(to bottom, rgb(3, 71, 73) 0%, rgb(37, 248, 231) 35%, rgb(45,167,197) 100%);
-  background-repeat: repeat-x;
-}
-
-header{
-background: linear-gradient(to bottom, rgb(3, 71, 73) 0%, rgb(37, 248, 231) 35%, rgb(45,167,197) 100%);
-height: 60PX;
-color: #f2f1f5;
-}
-
-
-input{
-  align-items: center;
-  margin-top: 20px;
-  width: 800px;
-  height: 50px;
-  background-color: #f2f1f5;
-  padding: 10px;
-}
-
-.input-login{
-  width: 450px;
-}
-
-
-.login-page{
-zoom: 80%;
-width: 600px;
-height:500px;
--webkit-box-shadow: 5px 10px 5px 0px rgba(171,171,171,0.62); 
-box-shadow: 5px 10px 5px 0px rgba(171,171,171,0.62);
-background-color: #f5f3fa;
-position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  justify-content: center;  
-  border-radius:50px;
-}
-
-.textButton{
-position: absolute;
-top: 50%;
-left: 62%;
-margin-right: -50%;
-transform: translate(-50%, -50%)
-
-}
-
-button {
-  background: #131414;
-  text-shadow: 1px 1px 2px #0f030f;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 20px;
-  text-decoration: none;
- width: 200px;
- height: 50px;
- margin-top: 55px;
-
-}
-
-button:hover {
-  background: #3cb0fd;
-  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
-  text-decoration: none;
-}
-
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-.list{
-  text-align: center;
-}
-
-main{
-  text-align: center;
-  display: block;
-}
-
-.loading {
+  height: 60PX;
+  color: #f2f1f5;
+  }
+  
+  
+  input{
+    align-items: center;
+    margin-top: 20px;
+    width: 800px;
+    height: 50px;
+    background-color: #f2f1f5;
+    padding: 10px;
+  }
+  
+  .input-login{
+    width: 450px;
+  }
+  
+  
+  .login-page{
+  zoom: 80%;
+  width: 600px;
+  height:500px;
+  -webkit-box-shadow: 5px 10px 5px 0px rgba(171,171,171,0.62); 
+  box-shadow: 5px 10px 5px 0px rgba(171,171,171,0.62);
+  background-color: #f5f3fa;
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    justify-content: center;  
+    border-radius:50px;
+  }
+  
+  .textButton{
   position: absolute;
   top: 50%;
-  height: 100px;
-  margin-top: 180px; 
-  margin-left: 650px;
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid rgb(25, 25, 31);
-  border-right: 16px solid rgb(31, 150, 124);
-  border-bottom: 16px solid rgb(17, 74, 180);
-  width: 50px;
-  height: 50px;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
-}
-
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-
-
-.artista-album{
-  min-height: 210px;
-  display: flexbox;
-  border: 2px solid black;
-  text-align: center;
-  box-shadow: 0 10px 8px 0 rgba(0,0,0,0.2);
-  width:310px;
-  margin: 30px;
-  padding: 5px;
-  flex-direction: column;
-align-items: center;
-
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: rgb(62, 48, 184);
-}
-
-li a:hover:not(.active) {
-  background-color: #111;
-}
-
-.active {
-  background-color: #04AA6D;
-}
-
-img {
-  width: 300px;
-  padding: 10px;
- border-radius: 2px solid black;
-}
-
-p{
-  font-size: 30px;
-  margin-top: 50px;
-  text-align: center;
-}
+  left: 62%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+  
+  }
+  
+  button {
+    background: #131414;
+    text-shadow: 1px 1px 2px #0f030f;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+   width: 200px;
+   height: 50px;
+   margin-top: 55px;
+  
+  }
+  
+  button:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+  }
+  
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  .list{
+    text-align: center;
+  }
+  
+  main{
+    text-align: center;
+    display: block;
+  }
+  
+  .loading {
+    position: absolute;
+    top: 50%;
+    height: 100px;
+    margin-top: 180px; 
+    margin-left: 650px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid rgb(25, 25, 31);
+    border-right: 16px solid rgb(31, 150, 124);
+    border-bottom: 16px solid rgb(17, 74, 180);
+    width: 50px;
+    height: 50px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  
+  
+  .artista-album{
+    min-height: 210px;
+    display: flexbox;
+    border: 2px solid black;
+    text-align: center;
+    box-shadow: 0 10px 8px 0 rgba(0,0,0,0.2);
+    width:310px;
+    margin: 30px;
+    padding: 5px;
+    flex-direction: column;
+  align-items: center;
+  
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: rgb(62, 48, 184);
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
+  
+  img {
+    width: 300px;
+    padding: 10px;
+   border-radius: 2px solid black;
+  }
+  
+  p{
+    font-size: 30px;
+    margin-top: 50px;
+    text-align: center;
+  }
