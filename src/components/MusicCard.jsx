@@ -3,6 +3,9 @@ import PropTypes from 'prop-types';
 import { addSong, removeSong, getFavoriteSongs } from '../services/favoriteSongsAPI';
 import Carregando from '../pages/Carregando';
 
+// olhar o carregamento;
+// fazer o perfil
+// mudar os chekeds
 class MusicCard extends Component {
   constructor() {
     super();
@@ -49,6 +52,7 @@ class MusicCard extends Component {
     }
   }
 
+  // olhar o checkbox , alterar tamanho
   render() {
     const { trackId, previewUrl, trackName } = this.props;
     const { load, checked } = this.state;
