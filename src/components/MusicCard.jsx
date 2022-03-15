@@ -5,6 +5,12 @@ import Carregando from '../pages/Carregando';
 
 // olhar o carregamento;
 // fazer o perfil
+/* {
+  name: '',
+  email: '',
+  image: '',
+  description: '',
+} */
 // mudar os chekeds
 class MusicCard extends Component {
   constructor() {

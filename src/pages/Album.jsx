@@ -6,6 +6,20 @@ import MusicCard from '../components/MusicCard';
 import Carregando from './Carregando';
 import { getFavoriteSongs } from '../services/favoriteSongsAPI';
 
+/* [
+  {
+    artistId: 12,
+    artistName: "Artist Name",
+    collectionId: 123,
+    collectionName: "Collection Name",
+    collectionPrice: 12.25,
+    artworkUrl100: "https://url-to-image",
+    releaseDate: "2012-03-02T08:00:00Z",
+    trackCount: 8,
+  }
+]
+ */
+
 class Album extends React.Component {
   constructor() {
     super();
@@ -17,6 +31,7 @@ class Album extends React.Component {
     this.handleMusic = this.handleMusic.bind(this);
   }
 
+  // req API
   async componentDidMount() {
     this.handleMusic();
     await getFavoriteSongs();
