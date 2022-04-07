@@ -26,66 +26,97 @@ class Album extends React.Component {
 
     this.state = {
       requestMusicas: [],
+      favorites: [],
       isLoading: true,
     };
-    this.handleMusic = this.handleMusic.bind(this);
   }
 
   // req API
-  async componentDidMount() {
-    this.handleMusic();
-    await getFavoriteSongs();
-    this.setState(
-    );
-  }
-
-  async handleMusic() {
-    const { match } = this.props;
-    const { id } = match.params;
-    const request = await getMusics(id);
-    this.setState(
-      {
-        requestMusicas: request,
-        isLoading: false,
+  componentDidMount =async () => {
+    const {
+      match: {
+        params: { id },
       },
-    );
+    } = this.props;
+
+    const requestMusic = await getMusics(id);
+
+    this.setState({
+      requestMusicas: requestMusic,
+    });
+    this.isFavoriteSong();
   }
 
-  render() {
-    const { requestMusicas, isLoading } = this.state;
-    return (
-      <div data-testid="page-album">
-        <Header />
-        {isLoading ? (
-          <Carregando />)
-          : (
-            <div>
-              <h1 data-testid="artist-name">
-                {requestMusicas[0].artistName}
-              </h1>
-              <h2 data-testid="album-name">{requestMusicas[0].collectionName}</h2>
-            </div>
-          )}
-        {
-          // falta adicionar imagem para visiualizar
-          requestMusicas.map((music, index) => (
-            index > 0 && (
-              <MusicCard
-                key={ index }
-                trackId={ music.trackId }
-                trackName={ music.trackName }
-                previewUrl={ music.previewUrl }
-                requestMusicas={ requestMusicas }
-              />)
-          ))
-        }
-      </div>
-    );
+  isFavoriteSong = async () => {
+    this.setState({
+      isLoading: true,
+    });
+
+    const mysongsfavorites = await getFavoriteSongs();
+    this.setState({
+      favorites: mysongsfavorites,
+      isLoading: false,
+    });
   }
+
+  addFavorite = (favorite) => {
+    const { favorites } = this.state;
+    this.setState({
+      favorites: [...favorites, favorite],
+    });
+  }
+
+removeFavorite = (favorite) => {
+  const { favorites } = this.state;
+  this.setState({
+    favorites: favorites.filter((mu) => mu.trackId !== favorite.trackId),
+  });
+}
+
+render() {
+  const { state: { requestMusicas, isLoading, favorites },
+    addFavorite,
+    removeFavorite } = this;
+
+  return (
+    <div data-testid="page-album">
+      <Header />
+      {
+        requestMusicas.length
+      && (
+        <div>
+          <h1 data-testid="artist-name">{requestMusicas[0].artistName}</h1>
+          <h2 data-testid="album-name">{requestMusicas[0].collectionName}</h2>
+        </div>
+
+      )
+      }
+      <div>
+        <ul>
+          {requestMusicas.filter(({ trackName, previewUrl, trackId }) => (
+            trackName && previewUrl && trackId
+          )).map((el) => (
+            <MusicCard
+              key={ el.trackName }
+              trackId={ el.trackId }
+              trackName={ el.trackName }
+              previewUrl={ el.previewUrl }
+              favorites={ favorites }
+              addFavorite={ addFavorite }
+              removeFavorite={ removeFavorite }
+            />
+          ))}
+        </ul>
+      </div>
+      {isLoading && <Carregando loading={ isLoading } /> }
+
+    </div>
+  );
+}
 }
 
 Album.propTypes = {
-  match: PropTypes.arrayOf(PropTypes.object).isRequired,
+  match: PropTypes.func.isRequired,
   id: PropTypes.string.isRequired,
 };
 export default Album;
