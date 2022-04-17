@@ -85,7 +85,7 @@ render() {
         requestMusicas.length
       && (
         <div>
-          <h1 data-testid="artist-name">{requestMusicas[0].artistName}</h1>
+          <h2 data-testid="artist-name">{requestMusicas[0].artistName}</h2>
           <h2 data-testid="album-name">{requestMusicas[0].collectionName}</h2>
         </div>
 

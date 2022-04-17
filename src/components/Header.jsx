@@ -29,24 +29,35 @@ class Header extends Component {
    render() {
      const { state } = this;
      return (
-       <header data-testid="header-component">
-         {state.nameUsuario
-           ? <h1 data-testid="header-user-name">{ state.nameUsuario }</h1>
-           : <Carregando />}
-         <nav className="links">
-           <ul>
-             <li>
-               <Link to="/search" data-testid="link-to-search">Pesquisar</Link>
-             </li>
-             <li>
-               <Link to="/favorites" data-testid="link-to-favorites">Favorites</Link>
-             </li>
-             <li>
-               <Link to="/profile" data-testid="link-to-profile">Profile</Link>
-             </li>
-           </ul>
-         </nav>
-       </header>
+       <div className="input-pesquisa">
+         <header data-testid="header-component">
+           {state.nameUsuario
+             ? <h1 data-testid="header-user-name">{ state.nameUsuario }</h1>
+             : <Carregando />}
+           <nav className="links">
+             <ul>
+               <Link
+                 to="/search"
+                 data-testid="link-to-search"
+               >
+                 Pesquisar
+               </Link>
+               <Link
+                 to="/favorites"
+                 data-testid="link-to-favorites"
+               >
+                 Favorites
+               </Link>
+               <Link
+                 to="/profile"
+                 data-testid="link-to-profile"
+               >
+                 Profile
+               </Link>
+             </ul>
+           </nav>
+         </header>
+       </div>
      );
    }
 }

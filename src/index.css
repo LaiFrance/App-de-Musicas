@@ -1,10 +1,13 @@
 *{
-  margin:2px;
-  padding: 0px;
-  
+  background-size: cover;
+
+  }
+
+  body{
+    background-image: url(./asserts/fundo.png);
   }
   
-  .btn-login{
+   .btn-login{
     width: 450px;
     margin-right: 130px;
   }
@@ -14,6 +17,7 @@
     margin-right:100px;
     margin-bottom: 70px;
   }
+
   .user{
   margin-top: 5px;
   margin-right: 5px;
@@ -28,32 +32,26 @@
   position:absolute;
   }
   
-  body {
-    background: transparent url("https://w0.peakpx.com/wallpaper/222/649/HD-wallpaper-anime-given-mafuyu-sato-ritsuka-uenoyama.jpg") no-repeat scroll 0px 50px;
-   
-    background: linear-gradient(to bottom, rgb(3, 71, 73) 0%, rgb(37, 248, 231) 35%, rgb(45,167,197) 100%);
-    background-repeat: repeat-x;
-  }
-  
   header{
-  background: linear-gradient(to bottom, rgb(3, 71, 73) 0%, rgb(37, 248, 231) 35%, rgb(45,167,197) 100%);
-  height: 60PX;
-  color: #f2f1f5;
+    background-image: url(../src/roxoheader.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    height: 500px;
+    color: #f2f1f5;
   }
   
   
   input{
-    align-items: center;
+    justify-content: center;
+    /* align-items: center; */
     margin-top: 20px;
-    width: 800px;
+    width: 450px;
     height: 50px;
     background-color: #f2f1f5;
     padding: 10px;
+    display: flex;
   }
   
-  .input-login{
-    width: 450px;
-  }
   
   
   .login-page{
@@ -83,7 +81,8 @@
   }
   
   button {
-    background: #131414;
+    border-radius: 10px;
+    background: #1ddddd;
     text-shadow: 1px 1px 2px #0f030f;
     font-family: Arial;
     color: #ffffff;
@@ -97,9 +96,9 @@
   
   button:hover {
     background: #3cb0fd;
-    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -webkit-linear-gradient(top, #d914d9, #3498db);
+    background-image: -moz-linear-gradient(top, #ac1bd0, #3498db);
+    background-image: -ms-linear-gradient(top, #b615c8, #80059f);
     background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
     background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
     text-decoration: none;
@@ -150,24 +149,42 @@
   
   
   .artista-album{
-    min-height: 210px;
-    display: flexbox;
-    border: 2px solid black;
+    align-items: center;
     text-align: center;
-    box-shadow: 0 10px 8px 0 rgba(0,0,0,0.2);
-    width:310px;
-    margin: 30px;
-    padding: 5px;
+    background-color: rgb(103 20 93 / 44%);
+    min-height: 210px;
+    display: inline-flex;
+    border: 5px solid rgba(157, 6, 191, 0.498);
+    text-align: center;
+    box-shadow: 0 10px 8px 0 rgb(0 0 0 / 20%);
+    width: 330px;
+    margin: 50px;
+    padding: 15px;
+    border-radius: 20px;
     flex-direction: column;
-  align-items: center;
+    align-items: center;
+    color: white;
   
   }
+
+  .links{
+    display: inline-flex;
+    background-color: #a41697;
+    width: 100%;
+    height: 60px;
+    color: white;
+    border-radius: 10px;
+  }
+
   ul {
+    color: white;
+    margin-top: 2px;
+    display: inline-block;
+    box-sizing: 100%;
     list-style-type: none;
-    margin: 0;
+    margin-top: 0px;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
   }
   
   li {
@@ -175,15 +192,21 @@
   }
   
   li a {
-    display: block;
+    font-size: 23px;
+    display: inline-block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
+
+  .container{
+    display:inline-flex;
+    
+  }
   
   li a:hover {
-    background-color: rgb(62, 48, 184);
+    background-color: rgb(247, 247, 248);
   }
   
   li a:hover:not(.active) {
@@ -197,11 +220,29 @@
   img {
     width: 300px;
     padding: 10px;
-   border-radius: 2px solid black;
+   border-radius: 20px;
   }
   
   p{
     font-size: 30px;
     margin-top: 50px;
     text-align: center;
+  } 
+
+.input-seach {
+  height: 30px;
+  align-items: center;
+  margin-top: 0px;
+  margin-inline-end: 10px;
+  display: inline-block;
+  border-radius: 10px;
   }
+
+  h1{
+    margin-top:-10px;
+    background-image: url(../src/asserts/gifimage.gif);
+    width: 320px;
+    height: 330px;
+    border-radius: 600px;
+    color: #de16c0;
+}
