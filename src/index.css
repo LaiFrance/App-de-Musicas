@@ -1,15 +1,21 @@
 *{
-  background-size: cover;
+  color: rgba(191, 22, 174, 0.999);
 
   }
 
   body{
     background-image: url(./asserts/fundo.png);
+    background-repeat:cover;
+
   }
   
    .btn-login{
     width: 450px;
     margin-right: 130px;
+  }
+
+  h2{
+    color: rgb(174, 15, 185);
   }
   
   
@@ -45,7 +51,7 @@
     justify-content: center;
     /* align-items: center; */
     margin-top: 20px;
-    width: 450px;
+    width: 350px;
     height: 50px;
     background-color: #f2f1f5;
     padding: 10px;
@@ -55,7 +61,7 @@
   
   
   .login-page{
-  zoom: 80%;
+  zoom: 55%;
   width: 600px;
   height:500px;
   -webkit-box-shadow: 5px 10px 5px 0px rgba(171,171,171,0.62); 
@@ -178,7 +184,7 @@
     border: 6px double white;
     font-size: 26px;
     background-color: #a41697;
-    width: 400px;
+    width: 590px;
     border-radius: 10px;
 }
 
@@ -227,6 +233,7 @@ a {
   .active {
     background-color: #04AA6D;
   }
+
   
   img {
     width: 300px;
