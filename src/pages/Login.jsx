@@ -45,7 +45,7 @@ class Login extends React.Component {
             {state.carregar ? <Carregando />
               : (
                 <>
-                  <h2 className="titulo">ANIME TUNES</h2>
+                  <h2 className="titulo">LAI TUNES</h2>
                   <input
                     className="input-login"
                     placeholder="Nome"

@@ -84,19 +84,21 @@ render() {
       {
         requestMusicas.length
       && (
-        <div>
+        <div className="album-artist">
           <h2 data-testid="artist-name">{requestMusicas[0].artistName}</h2>
           <h2 data-testid="album-name">{requestMusicas[0].collectionName}</h2>
+
         </div>
 
       )
       }
-      <div>
-        <ul>
+      <div className="card-music">
+        <ul className="card-music-list">
           {requestMusicas.filter(({ trackName, previewUrl, trackId }) => (
             trackName && previewUrl && trackId
           )).map((el) => (
             <MusicCard
+              className="card-musica"
               key={ el.trackName }
               trackId={ el.trackId }
               trackName={ el.trackName }

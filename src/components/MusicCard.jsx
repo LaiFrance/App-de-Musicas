@@ -58,7 +58,7 @@ class MusicCard extends React.Component {
     const favorited = favorites.some((mu) => mu.trackId === trackId);
 
     return (
-      <div>
+      <div className="card-lista">
         <h3>{ trackName }</h3>
         <audio
           data-testid="audio-component"
@@ -78,6 +78,7 @@ class MusicCard extends React.Component {
           <label htmlFor={ trackId }>
             Favorita
             <input
+              className="check"
               id={ trackId }
               type="checkbox"
               checked={ favorited || isFavorites }
