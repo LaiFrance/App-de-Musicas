@@ -3,7 +3,10 @@
 
 ### LINK DA APLICAÇÃO : https://app-de-musicas-lsrqp7gsv-laifrance.vercel.app/
 
-![React-App (13)](https://user-images.githubusercontent.com/91226847/169684561-399606da-1d79-4908-93cb-89f8a33cb186.png)
+![React-App (14)](https://user-images.githubusercontent.com/91226847/169697512-8ef826b4-91d8-4440-b023-b5fe400c8608.png)
+
+![React-App (17)](https://user-images.githubusercontent.com/91226847/169697717-98cdf72b-28c6-4c24-94b4-2caab13d7cb9.png)
+
 
 
 criar o TrybeTunes, uma aplicação capaz de reproduzir músicas das mais variadas bandas e artistas, criar uma lista de músicas favoritas e editar o perfil da pessoa usuária logada. Essa aplicação será capaz de:
