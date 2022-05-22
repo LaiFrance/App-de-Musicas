@@ -35,7 +35,7 @@ class Header extends Component {
              ? <h1 data-testid="header-user-name">{ state.nameUsuario }</h1>
              : <Carregando />}
            <nav className="links">
-             <ul>
+             <ul className="nav-ul">
                <Link
                  to="/search"
                  data-testid="link-to-search"
